@@ -12,6 +12,12 @@ To run the application, simply clone the repo and install the required gems:
 
 > $ bundle install
 
+## Running the tests
+
+To run the tests, use the following command:
+
+> $ rails test
+
 ## Running the server
 
 You can start the application, but running the rails server and browsing to http://localhost:3000

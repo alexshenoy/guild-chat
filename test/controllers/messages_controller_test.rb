@@ -12,7 +12,7 @@ describe MessagesController do
       @messages = Message.all
       @messages.each do |message|
         must_select "div.message" do
-          must_select "span.message_user", message.user
+          must_select "span.message_user", "#{message.user}:"
           must_select "span.message_body", message.body
         end
       end
