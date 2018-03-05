@@ -1,0 +1,8 @@
+<h1>Guild Chat App</h1>
+<h2>Please select a user below:</h2>
+<div>
+  <%= link_to 'Alice', messages_path(Message.new, user: 'alice') %>
+</div>
+<div>
+  <%= link_to 'Bob', messages_path(Message.new, user: 'bob') %>
+</div>

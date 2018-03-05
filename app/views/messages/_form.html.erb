@@ -1,0 +1,5 @@
+<%= form_for @message do |f| %>
+  <%= f.hidden_field :user %>
+  <%= f.text_field :body %>
+  <%= f.submit 'Send', data: {disable_with: false} %>
+<% end %>

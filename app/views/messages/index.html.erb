@@ -1,0 +1,16 @@
+<h1> Guild Chat App</h1>
+<div id="messages" >
+<% @messages.each do |message| %>
+  <div class="message">
+    <span class="message_user">
+      <b><%= message.user %>: </b>
+    </span>
+    <span class="message_body">
+      <%= message.body %>
+    </span>
+  </div>
+<% end %>
+</div>
+
+<%= render 'form' %>
+
